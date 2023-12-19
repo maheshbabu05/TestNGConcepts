@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" verbose ="2">
+<suite name="Suite" verbose ="2" parallel = "methods" thread-count="2">
   <test name="Test">
   
   <parameter name="Name" value="Century"></parameter>
@@ -19,7 +19,8 @@
       <class name="TestNgStudy.DependencyManagement"></class>
       <class name="TestNgStudy.SkipTestCase"></class> -->
      <!--   <class name="TestNgStudy.Grouping"></class> -->
-      <class name="TestNgStudy.Parametarization"></class>
+     <!--  <class name="TestNgStudy.Parametarization"></class> -->
+       <class name="TestNgStudy.ParallelTestCase"></class>
      
         
     </classes>
